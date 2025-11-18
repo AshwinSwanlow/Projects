@@ -1,0 +1,24 @@
+import java.io.*;
+
+class Test9{public static void main (String args[])
+
+	{String input="";
+
+	BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+
+	System.out.print("Enter your ID number");
+
+ 	try
+
+	{input=br.readLine();}
+
+	catch (IOException e){}
+
+	System.out.println("your ID number"+input);
+
+	System.out.println(" Year of birth is 19"+input.substring(0,2));
+
+
+	String part=input.substring(2,5);
+
+	int y=Integer.parseInt(part);
